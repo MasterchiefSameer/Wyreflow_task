@@ -1,0 +1,105 @@
+/* Wyreflow Design System - Dark Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 168 76% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 168 76% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 168 76% 42%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 168 76% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 168 76% 42%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 168 76% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 168 76% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 168 76% 42%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 168 76% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 168 76% 42%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
